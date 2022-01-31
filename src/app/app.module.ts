@@ -9,12 +9,16 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar/navbar.component';
 import { EmpleadoListComponent } from './empleado/empleado-list/empleado-list.component';
 import { EmpleadoModule } from './empleado/empleado.module';
+import { AdministrativasComponent } from './administativas/administrativas/administrativas.component';
+import { EmpleabilidadComponent } from './empleabilidad/empleabilidad/empleabilidad.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    EmpleadoListComponent
+    EmpleadoListComponent,
+    AdministrativasComponent,
+    EmpleabilidadComponent
   ],
   imports: [
     BrowserModule,
