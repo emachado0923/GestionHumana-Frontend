@@ -11,6 +11,7 @@ import { EmpleadoListComponent } from './empleado/empleado-list/empleado-list.co
 import { EmpleadoModule } from './empleado/empleado.module';
 import { CrearEmpleadoComponent } from './crear-empleado/crear-empleado.component';
 import { LoginComponent } from './login/login.component';
+import { HijosComponent } from './hijos/hijos.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { LoginComponent } from './login/login.component';
     EmpleadoListComponent,
     CrearEmpleadoComponent,
     LoginComponent,
+    HijosComponent,
     
   ],
   imports: [
