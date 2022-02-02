@@ -1,15 +1,29 @@
 <div class="card mt-3">
   <div class="card-body">
 
-    <div class="form-floating mb-3 col-md-6">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Email address</label>
-    </div>
+    <div class="login-form">
+      <form >
+          <h1>Ingresar</h1>
+      
+          <div class="form-group">
+              <input type="email" placeholder="Correo Electronico">
+          </div>
 
-    <div class="form-floating col-md-6">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">Password</label>
-    </div>
+          <div class="form-group">
+              <input type="password" placeholder="Contraseña">
+          </div>
+
+          <a href="#" class="forget">Olvidaste la Contraseña</a>
+          <div class="login-btn">
+              <button type="submit" [routerLink]="['/empleado']" routerLinkActive="router-link-active" >Ingresar</button>
+          </div>
+
+          <div class="reg">
+          <span>No eres un miembro</span>
+          <a href="#">Registrate Ahora</a>
+          </div>
+      </form>
+  </div>
 
   </div>
 </div>

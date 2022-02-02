@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CrearEmpleadoComponent implements OnInit {
 
+  checked:boolean=false;
+
   constructor() { }
+
+  crearHijos(){
+    this.checked=!false;
+    return this.checked;
+  }
 
   ngOnInit(): void {
   }
