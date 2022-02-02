@@ -1,0 +1,163 @@
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="nav-demografico-tab" data-bs-toggle="tab" data-bs-target="#nav-demografico" type="button" role="tab" aria-controls="nav-demografico" aria-selected="true">Demograficos</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="nav-empleabilidad-tab" data-bs-toggle="tab" data-bs-target="#nav-empleabilidad" type="button" role="tab" aria-controls="nav-empleabilidad" aria-selected="false">Empleabilidad</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="nav-administrativas-tab" data-bs-toggle="tab" data-bs-target="#nav-administrativas" type="button" role="tab" aria-controls="nav-administrativas" aria-selected="false">Administrativas</button>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="nav-demografico-tab" role="tabpanel" aria-labelledby="nav-demografico-tab">
+    <form class="row g-3">
+      
+      <div class="col-md-4">
+        <label for="validationServer01" class="form-label">Nombres</label>
+        <input type="text" class="form-control is-valid" id="nombres" required>
+      </div>
+
+      <div class="col-md-4">
+        <label for="validationServer02" class="form-label">Apellidos</label>
+        <input type="text" class="form-control is-valid" id="apellidos"  required>
+      </div>
+
+      <div class="col-md-4">
+        <label for="validationServerUsername" class="form-label">Correo Electrónico</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend3">@</span>
+          <input type="email" class="form-control is-invalid" id="correoElectronico" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationServer03" class="form-label">cédula</label>
+        <input type="text" class="form-control is-invalid" id="cedula" aria-describedby="validationServer03Feedback" required>
+      </div>
+      
+      <div class="col-md-3">
+        <label for="validationServer04" class="form-label">Genero</label><br>
+        <select class="form-select is-invalid" id="genero" aria-describedby="validationServer04Feedback" required>
+          <option selected disabled value="">...</option>
+          <option>Hombre</option>
+          <option>Mujer</option>
+          <option>LGBT</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationServer03" class="form-label">Fecha de Nacimiento</label>
+        <input type="date" class="form-control is-invalid" id="fechaNacimiento" aria-describedby="validationServer03Feedback" required>
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationServer03" class="form-label">Lugar de Nacimiento</label>
+        <input type="text" class="form-control is-invalid" id="lugarNacimiento" aria-describedby="validationServer03Feedback" required>
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationServer03" class="form-label">Dirección</label>
+        <input type="text" class="form-control is-invalid" id="direccion" aria-describedby="validationServer03Feedback" required>
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationServer03" class="form-label">Municipio</label>
+        <input type="text" class="form-control is-invalid" id="municipio" aria-describedby="validationServer03Feedback" required>
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationServer03" class="form-label">Barrio</label>
+        <input type="text" class="form-control is-invalid" id="barrio" aria-describedby="validationServer03Feedback" required>
+      </div>
+
+      <div class="col-md-3">
+        <label for="validationServer05" class="form-label">Estrato Socioeconómico</label>
+        <input type="number" class="form-control is-invalid" id="estrato" aria-describedby="validationServer05Feedback" required>
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationServer03" class="form-label">Teléfono</label>
+        <input type="tel" class="form-control is-invalid" id="telefono" aria-describedby="validationServer03Feedback" required>
+      </div>
+
+      <div class="col-md-3">
+        <label for="validationServer04" class="form-label">Tipo Vivienda</label><br>
+        <select class="form-select is-invalid" id="tipoVivienda" aria-describedby="validationServer04Feedback" required>
+          <option selected disabled value="">...</option>
+          <option>Propia</option>
+          <option>Alquilada</option>
+          <option>Familiar</option>
+        </select>
+      </div>
+
+      <div class="col-md-3">
+        <label for="validationServer04" class="form-label">Estado Cívil</label><br>
+        <select class="form-select is-invalid" id="estadoCivil" aria-describedby="validationServer04Feedback" required>
+          <option selected disabled value="">...</option>
+          <option>Casado</option>
+          <option>Unión Libre</option>
+          <option>Soltero</option>
+          <option>Viudo</option>
+        </select>
+      </div>
+
+      <div class="col-md-3">
+        <label for="validationServer04" class="form-label">Nivel de Formación</label><br>
+        <select class="form-select is-invalid" id="nivelFormacion" aria-describedby="validationServer04Feedback" required>
+          <option selected disabled value="">...</option>
+          <option>Técnico</option>
+          <option>Tecnológo</option>
+          <option>Profesional</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationServer03" class="form-label">Titulo Obtenido</label>
+        <input type="text" class="form-control is-invalid" id="tituloObtenido" aria-describedby="validationServer03Feedback" required>
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationServer03" class="form-label">Nombre de Cónyuge</label>
+        <input type="tel" class="form-control is-invalid" id="nombreConyuge" aria-describedby="validationServer03Feedback" required>
+      </div>
+
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+          <label class="form-check-label" for="invalidCheck3">
+            ¿Tiene Hijos?
+          </label>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <label for="validationServer04" class="form-label">¿Tiene alguna condición especial?</label><br>
+        <select class="form-select is-invalid" id="tieneHijo" aria-describedby="validationServer04Feedback" required>
+          <option selected disabled value="">...</option>
+          <option>Sí</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationServer03" class="form-label">Especifique Condición</label>
+        <input type="tel" class="form-control is-invalid" id="especifique" aria-describedby="validationServer03Feedback" required>
+      </div>
+
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+    </form>
+
+  </div>
+
+  <div class="tab-pane fade" id="nav-empleabilidad-tab" role="tabpanel" aria-labelledby="nav-empleabilidad-tab">...
+
+  </div>
+
+  <div class="tab-pane fade" id="nav-administrativas" role="tabpanel" aria-labelledby="nav-administrativas-tab">...
+
+  </div>
+
+</div>
