@@ -9,6 +9,8 @@ import { EmpleadoModule } from './empleado/empleado.module';
 import { CrearEmpleadoComponent } from './crear-empleado/crear-empleado.component';
 import { LoginComponent } from './login/login.component';
 import { HijosComponent } from './hijos/hijos.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 
@@ -26,7 +28,10 @@ import { HijosComponent } from './hijos/hijos.component';
     BrowserModule,
     AppRoutingModule,
     EmpleadoModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatTabsModule
+    
     
   ],
   providers: [],
