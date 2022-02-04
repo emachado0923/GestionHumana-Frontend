@@ -1,30 +1,37 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
-;
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar/navbar.component';
+import { NavbarComponent } from './navbar/navbar.component';
 import { EmpleadoListComponent } from './empleado/empleado-list/empleado-list.component';
 import { EmpleadoModule } from './empleado/empleado.module';
-import { AdministrativasComponent } from './administativas/administrativas/administrativas.component';
-import { EmpleabilidadComponent } from './empleabilidad/empleabilidad/empleabilidad.component';
+import { CrearEmpleadoComponent } from './crear-empleado/crear-empleado.component';
+import { LoginComponent } from './login/login.component';
+import { HijosComponent } from './hijos/hijos.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatTabsModule} from '@angular/material/tabs';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     EmpleadoListComponent,
-    AdministrativasComponent,
-    EmpleabilidadComponent
+    CrearEmpleadoComponent,
+    LoginComponent,
+    HijosComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     EmpleadoModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatTabsModule
+    
     
   ],
   providers: [],
