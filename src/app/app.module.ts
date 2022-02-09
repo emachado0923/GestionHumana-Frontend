@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { HijosComponent } from './hijos/hijos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -29,6 +30,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     AppRoutingModule,
     EmpleadoModule,
     HttpClientModule,
+    FormsModule,
     BrowserAnimationsModule,
     MatTabsModule
     

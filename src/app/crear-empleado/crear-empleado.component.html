@@ -4,34 +4,34 @@
 
   <mat-tab label="Demográficos">
     
-    <form class="row g-3 mt-3">
+    <form (submit)="submitEmpleado" class="row g-3 mt-3">
       
       <div class="col-md-4">
         <label for="validationServer01" class="form-label">Nombres</label>
-        <input type="text" class="form-control is-valid" id="nombres" required>
+        <input type="text" class="form-control is-valid" name="nombre" [(ngModel)]="demografico.nombre" required>
       </div>
 
       <div class="col-md-4">
         <label for="validationServer02" class="form-label">Apellidos</label>
-        <input type="text" class="form-control is-valid" id="apellidos"  required>
+        <input type="text" class="form-control is-valid" name="apellidos" [(ngModel)]="demografico.apellidos"  required>
       </div>
 
       <div class="col-md-4">
         <label for="validationServerUsername" class="form-label">Correo Electrónico</label>
         <div class="input-group has-validation">
           <span class="input-group-text" id="inputGroupPrepend3">@</span>
-          <input type="email" class="form-control is-invalid" id="correoElectronico" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+          <input type="email" class="form-control is-invalid" name="correoElectronico" [(ngModel)]="demografico.correoElectronico" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
         </div>
       </div>
 
       <div class="col-md-4">
-        <label for="validationServer03" class="form-label">cédula</label>
-        <input type="text" class="form-control is-invalid" id="cedula" aria-describedby="validationServer03Feedback" required>
+        <label for="validationServer03" class="form-label">Cédula</label>
+        <input type="text" class="form-control is-invalid" name="cedula" [(ngModel)]="demografico.cedula" aria-describedby="validationServer03Feedback" required>
       </div>
       
       <div class="col-md-4">
         <label for="validationServer04" class="form-label">Genero</label><br>
-        <select class="form-select is-invalid" id="genero" aria-describedby="validationServer04Feedback" required>
+        <select class="form-select is-invalid" name="genero" [(ngModel)]="demografico.genero" aria-describedby="validationServer04Feedback" required>
           <option selected disabled value="">...</option>
           <option>Hombre</option>
           <option>Mujer</option>
@@ -41,42 +41,42 @@
 
       <div class="col-md-4">
         <label for="validationServer03" class="form-label">Fecha de Nacimiento</label>
-        <input type="date" class="form-control is-invalid" id="fechaNacimiento" aria-describedby="validationServer03Feedback" required>
+        <input type="date" class="form-control is-invalid" name="fechaNacimiento" [(ngModel)]="demografico.fechaNacimiento" aria-describedby="validationServer03Feedback" required>
       </div>
 
       <div class="col-md-4">
         <label for="validationServer03" class="form-label">Lugar de Nacimiento</label>
-        <input type="text" class="form-control is-invalid" id="lugarNacimiento" aria-describedby="validationServer03Feedback" required>
+        <input type="text" class="form-control is-invalid" name="lugarNacimiento" [(ngModel)]="demografico.lugarNacimiento" aria-describedby="validationServer03Feedback" required>
       </div>
 
       <div class="col-md-4">
         <label for="validationServer03" class="form-label">Dirección</label>
-        <input type="text" class="form-control is-invalid" id="direccion" aria-describedby="validationServer03Feedback" required>
+        <input type="text" class="form-control is-invalid" name="direccion" [(ngModel)]="demografico.direccion" aria-describedby="validationServer03Feedback" required>
       </div>
 
       <div class="col-md-4">
         <label for="validationServer03" class="form-label">Municipio</label>
-        <input type="text" class="form-control is-invalid" id="municipio" aria-describedby="validationServer03Feedback" required>
+        <input type="text" class="form-control is-invalid" name="municipio" [(ngModel)]="demografico.municipio" aria-describedby="validationServer03Feedback" required>
       </div>
 
       <div class="col-md-4">
         <label for="validationServer03" class="form-label">Barrio</label>
-        <input type="text" class="form-control is-invalid" id="barrio" aria-describedby="validationServer03Feedback" required>
+        <input type="text" class="form-control is-invalid" name="barrio" [(ngModel)]="demografico.barrio" aria-describedby="validationServer03Feedback" required>
       </div>
 
       <div class="col-md-4">
         <label for="validationServer05" class="form-label">Estrato Socioeconómico</label>
-        <input type="number" class="form-control is-invalid" id="estrato" aria-describedby="validationServer05Feedback" required>
+        <input type="number" class="form-control is-invalid" name="estrato" [(ngModel)]="demografico.estrato" aria-describedby="validationServer05Feedback" required>
       </div>
 
       <div class="col-md-4">
         <label for="validationServer03" class="form-label">Teléfono</label>
-        <input type="tel" class="form-control is-invalid" id="telefono" aria-describedby="validationServer03Feedback" required>
+        <input type="tel" class="form-control is-invalid" name="telefono" [(ngModel)]="demografico.telefono" aria-describedby="validationServer03Feedback" required>
       </div>
 
       <div class="col-md-4">
         <label for="validationServer04" class="form-label">Tipo Vivienda</label><br>
-        <select class="form-select is-invalid" id="tipoVivienda" aria-describedby="validationServer04Feedback" required>
+        <select class="form-select is-invalid" name="tipoVivienda" [(ngModel)]="demografico.tipoVivienda" aria-describedby="validationServer04Feedback" required>
           <option selected disabled >...</option>
           <option>Propia</option>
           <option>Alquilada</option>
@@ -86,7 +86,7 @@
 
       <div class="col-md-4">
         <label for="validationServer04" class="form-label">Estado Cívil</label><br>
-        <select class="form-select is-invalid" id="estadoCivil" aria-describedby="validationServer04Feedback" required>
+        <select class="form-select is-invalid" id="estadoCivil" [(ngModel)]="demografico.estadoCivil" aria-describedby="validationServer04Feedback" required>
           <option selected disabled value="">...</option>
           <option>Casado</option>
           <option>Unión Libre</option>
@@ -97,7 +97,7 @@
 
       <div class="col-md-4">
         <label for="validationServer04" class="form-label">Nivel de Formación</label><br>
-        <select class="form-select is-invalid" id="nivelFormacion" aria-describedby="validationServer04Feedback" required>
+        <select class="form-select is-invalid" id="nivelFormacion" [(ngModel)]="demografico.nivelFormacion" aria-describedby="validationServer04Feedback" required>
           <option selected disabled value="">...</option>
           <option>Técnico</option>
           <option>Tecnológo</option>
@@ -107,17 +107,17 @@
 
       <div class="col-md-4">
         <label for="validationServer03" class="form-label">Titulo Obtenido</label>
-        <input type="text" class="form-control is-invalid" id="tituloObtenido" aria-describedby="validationServer03Feedback" required>
+        <input type="text" class="form-control is-invalid" name="tituloObtenido" [(ngModel)]="demografico.tituloObtenido" aria-describedby="validationServer03Feedback" required>
       </div>
 
       <div class="col-md-4">
         <label for="validationServer03" class="form-label">Nombre de Cónyuge</label>
-        <input type="tel" class="form-control is-invalid" id="nombreConyuge" aria-describedby="validationServer03Feedback" required>
+        <input type="tel" class="form-control is-invalid" name="nombreConyuge" [(ngModel)]="demografico.nombreConyuge" aria-describedby="validationServer03Feedback" required>
       </div>
 
       <div class="col-md-4">
         <label for="validationServer04" class="form-label">¿Tiene alguna condición especial?</label><br>
-        <select class="form-select is-invalid" id="tieneHijo" aria-describedby="validationServer04Feedback" required>
+        <select class="form-select is-invalid" name="condicionEspecial" [(ngModel)]="demografico.condicionEspecial" aria-describedby="validationServer04Feedback" required>
           <option selected disabled value="">...</option>
           <option>Sí</option>
           <option>No</option>
@@ -126,12 +126,12 @@
 
       <div class="col-md-4">
         <label for="validationServer03" class="form-label">Especifique Condición</label>
-        <input type="tel" class="form-control is-invalid" id="especifique" aria-describedby="validationServer03Feedback" required>
+        <input type="tel" class="form-control is-invalid" name="especifique" [(ngModel)]="demografico.especifique" aria-describedby="validationServer03Feedback" required>
       </div>
 
       <div class="col-12">
         <div class="form-check">
-          <input class="form-check-input is-invalid" (click)="checked=!checked" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+          <input class="form-check-input is-invalid" (click)="checked=!checked" type="checkbox" value="" name="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
           <label class="form-check-label" for="invalidCheck3">
             ¿Tiene Hijos?
           </label>
@@ -143,7 +143,7 @@
      
 
       <div class="col-12">
-        <button class="btn btn-primary mb-3" type="submit">Submit form</button>
+        <button class="btn btn-secondary btn-block mb-3" >Guardar</button>
       </div>
     </form>
     
@@ -253,7 +253,7 @@
       </div>
 
       <div class="col-12">
-        <button class="btn btn-primary mb-3" type="submit">Submit form</button>
+        <button class="btn btn-secondary mb-3" type="submit">Submit form</button>
       </div>
 
     </form>
@@ -352,7 +352,7 @@
       </div>
 
       <div class="col-12">
-        <button class="btn btn-primary mb-3" type="submit">Submit form</button>
+        <button class="btn btn-secondary mb-3" type="submit">Submit form</button>
       </div>
     </form>
 
