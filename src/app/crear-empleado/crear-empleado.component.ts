@@ -10,7 +10,7 @@ export class CrearEmpleadoComponent implements OnInit {
 
   checked:boolean=false;
 
-  demografico: CrearEmpleadoComponent = {
+  demografico: CrearEmpleados = {
 
     nombre: '',
     apellidos: '',

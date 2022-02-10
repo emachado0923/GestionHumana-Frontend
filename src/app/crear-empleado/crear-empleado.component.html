@@ -20,7 +20,7 @@
         <label for="validationServerUsername" class="form-label">Correo Electrónico</label>
         <div class="input-group has-validation">
           <span class="input-group-text" id="inputGroupPrepend3">@</span>
-          <input type="email" class="form-control is-invalid" name="correoElectronico" [(ngModel)]="demografico.correoElectronico" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+          <input type="email" class="form-control is-invalid" name="correoPersonal" [(ngModel)]="demografico.correoPersonal" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
         </div>
       </div>
 
@@ -112,7 +112,7 @@
 
       <div class="col-md-4">
         <label for="validationServer03" class="form-label">Nombre de Cónyuge</label>
-        <input type="tel" class="form-control is-invalid" name="nombreConyuge" [(ngModel)]="demografico.nombreConyuge" aria-describedby="validationServer03Feedback" required>
+        <input type="tel" class="form-control is-invalid" name="nombreConyuge" [(ngModel)]="demografico.nombreConyuge" aria-describedby="validationServer03Feedback">
       </div>
 
       <div class="col-md-4">
@@ -126,12 +126,12 @@
 
       <div class="col-md-4">
         <label for="validationServer03" class="form-label">Especifique Condición</label>
-        <input type="tel" class="form-control is-invalid" name="especifique" [(ngModel)]="demografico.especifique" aria-describedby="validationServer03Feedback" required>
+        <input type="tel" class="form-control is-invalid" name="especifique" [(ngModel)]="demografico.especifique" aria-describedby="validationServer03Feedback">
       </div>
 
       <div class="col-12">
         <div class="form-check">
-          <input class="form-check-input is-invalid" (click)="checked=!checked" type="checkbox" value="" name="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+          <input class="form-check-input is-invalid" (click)="checked=!checked" type="checkbox" value="" name="invalidCheck3" aria-describedby="invalidCheck3Feedback">
           <label class="form-check-label" for="invalidCheck3">
             ¿Tiene Hijos?
           </label>
