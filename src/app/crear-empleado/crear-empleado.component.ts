@@ -9,21 +9,22 @@ import { CrearEmpleados } from '../interfaces/crear-empleado';
 export class CrearEmpleadoComponent implements OnInit {
 
   checked:boolean=false;
+  submitted:boolean = false;
 
   demografico: CrearEmpleados = {
 
     nombre: '',
     apellidos: '',
-    cedula:  '',
+    cedula:  0,
     correoPersonal: '',
     genero: '',
-    fechaNacimiento: '',
+    fechaNacimiento: 0,
     lugarNacimiento: '',
     direccion: '',
     municipio: '',
     barrio: '',
-    estrato: '',
-    telefono: '',
+    estrato: 0,
+    telefono: 0,
     tipoVivienda: '',
     estadoCivil: '',
     nivelFormacion: '',
@@ -40,9 +41,14 @@ export class CrearEmpleadoComponent implements OnInit {
     return this.checked;
   }
 
-  submitEmpleado(){}
+  agregarEmpleado(){
+    console.log(this.agregarEmpleado)
+    
+  }
 
   ngOnInit(): void {
   }
+
+  
 
 }
