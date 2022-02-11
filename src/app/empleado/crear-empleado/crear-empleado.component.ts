@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { EmpleadoService } from '../service/empleado.service';
 import {Empleado} from '../interfaces/empleado.interface'
 import {Router} from '@angular/router';
+=======
+>>>>>>> b5f09b4aed64971ba787334f294ffdd6577b378d
 
 @Component({
   selector: 'app-crear-empleado',
@@ -10,6 +13,7 @@ import {Router} from '@angular/router';
 })
 export class CrearEmpleadoComponent implements OnInit {
 
+<<<<<<< HEAD
   empleados:Empleado[]=[];
 
   public empleado:any;
@@ -39,10 +43,14 @@ export class CrearEmpleadoComponent implements OnInit {
 
     } 
    }
+=======
+  constructor() { }
+>>>>>>> b5f09b4aed64971ba787334f294ffdd6577b378d
 
   ngOnInit(): void {
   }
 
+<<<<<<< HEAD
   onSubmit(){
     this.empleadoService.crearEmpleado(this.empleado)
     .subscribe(
@@ -56,4 +64,6 @@ export class CrearEmpleadoComponent implements OnInit {
 
 
 
+=======
+>>>>>>> b5f09b4aed64971ba787334f294ffdd6577b378d
 }
