@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { Empleado } from '../interfaces/empleado.interface';
 import {map} from 'rxjs/operators';
+import { empleado } from '../empleado.interface';
 ;
 ;
 
@@ -18,5 +19,10 @@ export class EmpleadoService {
    return this.http.get<any>(`${this.BASE_URL}`) 
   
     
+  }
+
+  crearEmpleado(empleado:Empleado){
+    
+    return this.http.post<Empleado>(`${this.BASE_URL}`,empleado);
   }
 }
